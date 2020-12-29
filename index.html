@@ -71,10 +71,15 @@
             </form>
         </section>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 <script>
-    console.log(process.env.WEATHER_API_KEY)
+    $.ajax({
+        url: 'function.php',
+        success: function (data) {
+            console.log(data)
+        }
+    });
 </script>
 
 </html>
